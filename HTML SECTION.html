@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param Bhatkar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="C:\Users\param\OneDrive\Desktop\portfolio\2022BEL018 (1).jpg" alt="Profile Photo" class="profile-photo">
+        <h1>Param Bhatkar</h1>
+        <p>Second Year Electrical Engineering Student</p>
+        <p>Full Stack Developer | Web Developer | Python Developer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate second-year Electrical Engineering student at Shri Guru Gobind Singhji Institute of Information Technology, Vishnupuri, Nanded. Currently, I am interning as a Full Stack Developer at IEEE Bombay Section and as a Web Developer and Python Developer at CodeAlpha. My interest lies in exploring and implementing innovative solutions in the field of technology.
+        </p>
+        <p>
+            Apart from coding, I actively participate in extracurricular activities. As a member of the E-Cell at my college, I am dedicated to fostering an entrepreneurial spirit among students. In my role as the Assistant Manager at Pragyaa 2024 in Public Relations, I contribute to organizing and promoting technical events.
+        </p>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships">
+        <h2>Internships</h2>
+        <p>
+            <strong>Full Stack Developer Intern - IEEE Bombay Section [Sept'2023-Oct'2023]</strong><br>
+            Worked on developing and maintaining web applications. Collaborated with a diverse team to address challenges and deliver effective solutions.
+        </p>
+        <p>
+            <strong>Python Developer Intern - CodeAlpha [Jan'2024-Present]</strong>
+            <p>Currently pursuing Python development projects. Collaborating with a dynamic team to create innovative solutions and enhance online platforms.</p>
+        </p>
+        <p>
+            <strong>Web Developer Intern - Bharat Intern [Jan'2024-Present]</strong>
+            <p>Currently pursuing web development projects. I have to make my personal portfolio here using basic HTML CSS and also a weather forecasting app using HTML CSS Java and API. Also, I have to make a clone of the online shows and movie streaming platform called "NETFLIX".</p>
+        </p>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>
+            I was a finalist at SIH 2023 (Problem Statement ID: 1368, Ministry of Social Justice and Empowerment, GOI). In this project, we developed a multi-gas detector sensor for sewers and septic tanks, utilizing sensors like MQ-2, MQ-7, MQ-135, and MQ-136. The system detects harmful gases and triggers a buzzer to ensure the safety of workers.
+        </p>
+        <!-- Add project photos here -->
+        <div class="project-photos">
+            <img src="C:\Users\param\OneDrive\Desktop\portfolio\1704438480211.jpeg" alt="Project Photo 1">
+            <img src="C:\Users\param\OneDrive\Desktop\portfolio\1704438377432.jpeg" alt="Project Photo 2">
+            <img src="C:\Users\param\OneDrive\Desktop\portfolio\WhatsApp Image 2024-01-13 at 00.04.10_defbee91.jpg" alt="Project Photo 3">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>
+            Thingspeak, Arduino IDE, IFTTT, ESP8266, Presentation Development, Presentation Skills, Internet of Things (IoT), Project Management, Teamwork, Communication, MATLAB, Simulink.
+        </p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>View my resume: <a href="C:\Users\param\OneDrive\Desktop\portfolio\ParamResume.pdf" target="_blank">Resume.pdf</a></p>
+    </section>
+
+    <!-- Suggestion Box Section -->
+    <section class="suggestion-box">
+        <h2>Any Suggestions?</h2>
+        <div class="form-container">
+            <form id="my-form" action="https://formspree.io/f/xqkrapjn" method="POST">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <label>Message:</label>
+                <textarea name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/param-bhatkar-171061250/" target="_blank">Param Bhatkar's LinkedIn</a></p>
+        <p>Email: <a href="mailto:parambhatkar8@gmail.com">parambhatkar8@gmail.com</a></p>
+        <p>Github: <a href="https://github.com/Param1411" target="_blank">GitHub</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Param Bhatkar</p>
+    </footer>
+
+    <!-- Add your animations and responsive styling using GSAP here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+
+        gsap.from("#about, #internships, #projects, #team, #skills, #resume, #contact, .logo", {
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                trigger: "#about, #internships, #projects, #team, #skills, #resume, #contact, .logo",
+                start: "top 80%",
+                end: "bottom 40%",
+                scrub: true,
+            },
+        });
+
+    </script>
+
+</body>
+</html>

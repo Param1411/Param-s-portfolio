@@ -1,0 +1,64 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #040000;
+    color: #f5f0f0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+}
+
+img.profile-photo,
+.project-photos img,
+.team-photo img,
+.logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-photos img:hover,
+.team-photo img:hover {
+    transform: scale(2.2);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.suggestion-box {
+    position: relative;
+    margin-top: 20px;
+}
+
+.suggestion-box .form-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
